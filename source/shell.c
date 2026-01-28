@@ -33,37 +33,6 @@ struct command split_command(char *input);
 
 void exec_command(char *input);
 
-void split_arg(struct command argument);
-
-// shell commands functions prototypes
-void list(const char *path);
-
-void make_dir(const char *path);
-
-void remove_file(const char *path);
-
-void remove_dir(const char *path); // trying to delete the folder and the files init recursively
-
-// void copy_files(struct split_arg argument);
-void copy_files(const char *arg);
-
-// void move_files(struct split_arg argument);
-void move_files(const char *arg);
-
-void print_cdirectory(const char *arg);
-
-void change_directory(const char *path);
-
-void change_ownership(const char *path);
-
-void make_file(const char *path);
-
-void clear(const char *arg);
-
-void echo(const char *arg);
-
-void exit_(const char *arg);
-
 struct exec_command CommandsList[] = {
     {"ls", list},
     {"mkdir", make_dir},
@@ -180,7 +149,7 @@ void remove_dir(const char *path) {
     if (dP == NULL) {
         perror("failed to open the directory to delete the files recursively");
         return;
-    } else 
+    } else
     {
         printf("opened the directory");
     }
