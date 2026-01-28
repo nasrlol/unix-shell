@@ -23,17 +23,6 @@ The goal of this project is to enhance understanding of:
 - File handling
 - Process management in C
 
-## Features
-
-- **File and Directory Management** – Create, delete, and navigate directories and files.
-- **File Copy and Move** – Copy and move files between directories.
-- **Ownership Management** – Change file permissions.
-- **Recursive Directory Deletion** – Delete directories and their contents recursively.
-- **View Current Directory** – Display the present working directory.
-- **Basic Command Execution** – Execute a set of predefined commands.
-- **Screen Clearing** – Clear the terminal screen with the `clr` command.
-- **Graceful Exit** – Exit the shell cleanly.
-
 ## Installation
 
 1. Clone the repository:
@@ -84,27 +73,6 @@ After running the shell (`./custom_shell`), you can execute the following comman
  ├── README.md       # Documentation
  ├── LICENSE         # License information
 ```
-
-## Known Issues
-
-- Some commands may not fully replicate the behavior of a standard Unix shell.
-- Does not support piping (`|`) and complex command chaining.
-
-## Contributing
-
-Contributions are welcome! If you’d like to improve this project, follow these steps:
-
-1. Fork the repository
-2. Create a new branch
-3. Make your changes and test them
-4. Submit a pull request
-
-## Author
-
-**Appie (nasrlol)**  
-- GitHub: [@nasrlol](https://github.com/nasrlol)  
-- Website: [nasrlol.dev](https://nasrlol.dev)  
-
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
